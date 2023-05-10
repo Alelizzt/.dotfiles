@@ -24,7 +24,7 @@ then
     exit
 fi
 
-cd .dotfiles/.config/oh-my-zsh
+cd ~/.dotfiles/.config/oh-my-zsh
 chmod +x oh-my-zsh.sh
 
 git clone https://github.com/romkatv/powerlevel10k.git ~/.dotfiles/.config/oh-my-zsh/custom/themes/powerlevel10k
