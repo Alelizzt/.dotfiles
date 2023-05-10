@@ -35,8 +35,7 @@ then
     exit
 fi
 
-NVM=/usr/share/nvm/init-nvm.sh
-if [ -f "$NVM" ];
+if [ -f "$HOME/.nvm/nvm.sh" ];
 then
     echo -e "\n${greenColour}[+]${endColour}${grayColour} nvm is installed${endColour}"
 else

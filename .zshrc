@@ -176,8 +176,9 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source /home/$USER/.config/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 source /home/$USER/.config/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-source /usr/share/nvm/init-nvm.sh
 
+export NVM_DIR="$HOME.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ## Aliases ##
@@ -204,8 +205,6 @@ alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
 alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'  # remove orphaned packages
-
-
 
 # confirm before overwriting something
 #alias cp="cp -i"
