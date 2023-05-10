@@ -67,3 +67,8 @@ git clone https://github.com/zsh-users/zsh-completions.git ~/.dotfiles/.config/o
 echo -e "\n${greenColour}[+]${endColour}${grayColour} enable dotfiles${endColour}"
 cd ~/.dotfiles
 stow .
+
+echo -e "\n${greenColour}[+]${endColour}${grayColour} installing neovim plugins${endColour}"
+nvim --headless +PlugInstall +qa
+nvim +UpdateRemotePlugins +qa
+

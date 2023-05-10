@@ -26,15 +26,15 @@ set laststatus=2
 filetype on
 set nu
 
-call plug#begin('~/.config/vim/plugged')
+call plug#begin('~/.dotfiles/.config/vim/plugged')
 
 if has('mac')
       Plug 'junegunn/vim-xmark'
 endif
 
 
-if empty(glob('~/.config/vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs
+if empty(glob('~/.dotfiles/.config/vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.dotfiles/.config/vim/autoload/plug.vim --create-dirs
       \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
