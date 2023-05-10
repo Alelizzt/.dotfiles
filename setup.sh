@@ -35,4 +35,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.dotfiles/.
 
 git clone https://github.com/zsh-users/zsh-completions.git ~/.dotfiles/.config/oh-my-zsh/custom/plugins/zsh-completions
 
-
+cd ~/.dotfiles
+stow .
