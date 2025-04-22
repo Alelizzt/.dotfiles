@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-#Colours
+# Colours
 greenColour="\e[0;32m\033[1m"
 endColour="\033[0m\e[0m"
 redColour="\e[0;31m\033[1m"
@@ -9,6 +9,30 @@ yellowColour="\e[0;33m\033[1m"
 purpleColour="\e[0;35m\033[1m"
 turquoiseColour="\e[0;36m\033[1m"
 grayColour="\e[0;37m\033[1m"
+
+# Bright Colours
+brightGreenColour="\e[1;32m"
+brightRedColour="\e[1;31m"
+brightYellowColour="\e[1;33m"
+brightBlueColour="\e[1;34m"
+brightPurpleColour="\e[1;35m"
+brightTurquoiseColour="\e[1;36m"
+brightGrayColour="\e[1;37m"
+
+# More Colours
+cyanColour="\e[0;36m\033[1m"
+magentaColour="\e[0;35m\033[1m"
+whiteColour="\e[0;97m\033[1m"
+
+# Background Colours
+bgGreenColour="\e[48;5;22m"
+bgRedColour="\e[48;5;1m"
+bgBlueColour="\e[48;5;19m"
+bgYellowColour="\e[48;5;11m"
+bgPurpleColour="\e[48;5;5m"
+bgTurquoiseColour="\e[48;5;6m"
+bgGrayColour="\e[48;5;235m"
+bgWhiteColour="\e[48;5;15m"
 
 
 function ctrl_c() {
